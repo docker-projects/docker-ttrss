@@ -75,6 +75,6 @@ RUN chmod +x /etc/periodic/15min/runupdaterss && chmod +x /start.sh
 
 EXPOSE 80/tcp
 
-VOLUME ["/ttrss"]
+VOLUME /usr/html/ 
 
 CMD ["/start.sh"]
